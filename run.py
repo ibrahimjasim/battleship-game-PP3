@@ -16,7 +16,7 @@ def initialize_game_boards():
             player_guess_pattern,
             computer_hidden_pattern,
             computer_guess_pattern)
-            
+
 
 def print_boards(board1, board2,
                  board1_title="Your Guesses", board2_title="Computer's Guesses"):
@@ -44,3 +44,22 @@ def print_boards(board1, board2,
         row1 = " ".join(board1[row_num])
         row2 = " ".join(board2[row_num])
         print(f"{row_num + 1}|{row1}|    {row_num + 1}|{row2}|")
+
+
+def get_row_from_user():
+    '''
+        Get the row as a input from the user and then
+        validate the user input. If it is not correct,
+        let the user again enter the row. Once a valid 
+        input is detected, convert that to an int and return.
+    '''
+
+    while True:
+        row = input('Please enter a ship row (1-8): ')
+
+        
+        if row not in ['1', '2', '3', '4', '5', '6', '7', '8']:
+            print("Please enter a valid row ( 1<= row <= 8 ) ")
+            continue
+        else:
+            return int(row)-1
