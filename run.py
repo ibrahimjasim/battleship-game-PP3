@@ -63,3 +63,27 @@ def get_row_from_user():
             continue
         else:
             return int(row)-1
+            
+
+def get_col_from_user():
+    '''
+        Get the column as a input from the user and then
+        validate the user input. If it is not correct,
+        let the user again enter the row. Once a valid 
+        input is detected, get the corresponding index value and return.
+
+    '''
+
+    
+    letters_to_index_mapping = {'A': 0, 'B': 1,
+                                'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
+
+    while True:
+        column = input('Please enter a ship column (A-H): ').upper()
+
+        
+        if column not in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']:
+            print("Please enter a valid column ( A <= column <= H ) ")
+            continue
+        else:
+            return letters_to_index_mapping[column]
