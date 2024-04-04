@@ -87,7 +87,7 @@ def get_col_from_user():
             continue
         else:
             return letters_to_index_mapping[column]
-            
+
 
 def get_computer_location():
     '''
@@ -96,3 +96,19 @@ def get_computer_location():
     '''
     
     return randint(0, 7), randint(0, 7)
+    
+
+
+def create_ships(board, num_ships):
+    '''
+        This function places ships on the board randomly.
+
+        input : number of ships to be placed on the board.
+    '''
+
+    
+    for _ in range(num_ships):
+        ship_row, ship_col = randint(0, 7), randint(0, 7)
+        while board[ship_row][ship_col] == 'X':
+            ship_row, ship_col = randint(0, 7), randint(0, 7)
+        board[ship_row][ship_col] = 'X'
