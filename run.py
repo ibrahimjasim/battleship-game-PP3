@@ -35,8 +35,8 @@ def print_boards(board1, board2,
     '''
 
     print(f'{board1_title:20s}    {board2_title}')
-    print('   A B C D E F G H      A B C D E F G H')
-    print('   ****************     ****************')
+    print('  A B C D E F G H       A B C D E F G H')
+    print('  ****************      ****************')
 
     for row_num in range(8):
         row1 = " ".join(board1[row_num])
