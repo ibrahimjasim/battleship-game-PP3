@@ -246,12 +246,17 @@ def restart_condition_handler():
             else:
                 return False
 
+
 def play_one_battleship_game():
     '''
         This function allows the user to play one battleship game
     '''
-
-    player_hidden_pattern, player_guess_pattern, computer_hidden_pattern, computer_guess_pattern = initialize_game_boards()
+    (
+        player_hidden_pattern,
+        player_guess_pattern,
+        computer_hidden_pattern,
+        computer_guess_pattern,
+    ) = initialize_game_boards()
 
     turns = 10
     number_of_ships = 5
@@ -262,8 +267,6 @@ def play_one_battleship_game():
 
     create_ships(player_hidden_pattern, number_of_ships)
     create_ships(computer_hidden_pattern, number_of_ships)
-
-    # print_boards(player_hidden_pattern, computer_hidden_pattern)  # This line has been commented out
 
     print('Welcome to Battleship')
     print('=====================')
