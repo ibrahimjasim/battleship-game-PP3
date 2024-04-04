@@ -1,32 +1,36 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Battleship game
+![pp3 am i](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/f1c901e8-14c2-4df4-ae90-c8fbd3daa73e)
 
-Welcome,
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
 
-## Reminders
+The game Battleship is a Python terminal game that revolves around two players trying to strategically guess and locate the positions of the opponent's ships while keeping the positions of ones own ships hidden. The game is typically played on a grid-based board in which each battleship occupies one cell on the grid. First player to sink all of the opponent's ships is declared winner of the game round. 
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## Why playing the game 
+ **Skill Development:**
+-  It's a great way to practice strategic thinking and decision-making skills. Players need to guess the locations of ships, which requires logical reasoning and sometimes even pattern recognition.
 
-## Creating the Heroku app
+**Learning Experience:** 
+-  For those interested in programming, playing a game developed in Python can be inspiring. It demonstrates how coding skills can be used to create enjoyable, interactive experiences.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+**Nostalgia and Fun:** 
+-  Battleship has been a popular board game for generations. Playing a digital version can be a nostalgic experience for many, bringing back memories of playing the physical game.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+**Convenience:** 
+-  Unlike the traditional board game, this digital version doesn't require physical set-up or another person present to play. It's easily accessible and can be played anytime on a computer.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+**Educational Tool:**  
+-  For educators or parents, this game can be used as a fun way to introduce children to basic programming concepts and logic.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## How to play
 
-Connect your GitHub repository and deploy as normal.
+**Gameplay:**
 
-## Constraints
+-  The game will prompt you to enter coordinates for your guesses. This typically involves specifying a row *(1-8)* and a column *(A-H)*.
+-  Enter the coordinates where you think the computer's ships are located. For example, you might enter 1 for the row and A for the column.
+-  The terminal will update you on whether your guess was a hit or a miss and display the game boards showing your guesses and the computer's guesses.
+-  The game will also handle the computer's turn, making guesses against your ships.
+-  
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
----
 
-Happy coding!
+![pp3](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/8c516fcc-e564-4ac5-8044-1cee004af486)
