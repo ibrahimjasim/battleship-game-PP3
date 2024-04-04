@@ -123,3 +123,48 @@ def count_hit_ships(board):
 
     
     return sum(row.count('X') for row in board)
+
+
+def handle_user_turn(
+        player_guess_pattern,
+        computer_hidden_pattern,
+        number_of_ships,
+        player_hits):
+    '''
+        Handle the player's turn
+
+        Input :
+        player_guess_pattern : to identify whether user has entered a previous guess.
+        computer_hidden_pattern : to identify whether player hit a ship.
+        number_of_ships : to decide whether the player has won.
+        player_hits : to decide if the player has won and also to update the varaible.
+
+    '''
+
+    player_win_condition = False
+
+    row = get_row_from_user()
+    column = get_col_from_user()
+
+    
+    if player_guess_pattern[row][column] == '-':
+        print('You already guessed that.')
+    elif computer_hidden_pattern[row][column] == 'X':
+        print('Congratulations! You hit a battleship!')
+        player_guess_pattern[row][column] = 'X'
+        player_hits += 1
+
+        if player_hits == number_of_ships:
+            print(
+                "Congratulations! You have sunk all " +
+                "the computer's battleships."
+            )
+            player_win_condition = True
+
+            return player_hits, player_win_condition
+
+    else:
+        print('Sorry, you missed.')
+        player_guess_pattern[row][column] = '-'
+
+    return player_hits, player_win_condition
