@@ -314,3 +314,21 @@ def play_one_battleship_game():
             computer_guess_pattern,
             player_hits,
             computer_hits)
+            
+
+def play_battleship():
+    '''
+        Main driver of the game
+        Allows the user to create a new game as well.
+    '''
+
+    while True:
+        play_one_battleship_game()
+
+        if not restart_condition_handler():
+            print("Good Bye!")
+            break
+
+
+
+play_battleship()
