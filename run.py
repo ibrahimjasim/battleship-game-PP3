@@ -253,3 +253,64 @@ def restart_condition_handler():
                 return True
             else:
                 return False
+
+
+def play_one_battleship_game():
+    '''
+        This function allow the user to play one battleship game
+    '''
+
+    
+    player_hidden_pattern, player_guess_pattern, computer_hidden_pattern, computer_guess_pattern = initialize_game_boards()
+
+    
+    turns = 10
+    number_of_ships = 5
+    player_hits = 0
+    computer_hits = 0
+    player_win_condition = False
+    computer_win_condition = False
+
+
+    create_ships(player_hidden_pattern, number_of_ships)
+    create_ships(computer_hidden_pattern, number_of_ships)
+
+    print_boards(player_hidden_pattern, computer_hidden_pattern)
+
+    print('Welcome to Battleship')
+    print('=====================')
+    while turns > 0:
+        print_boards(player_guess_pattern, computer_guess_pattern)
+        print()
+
+       
+        player_hits, player_win_condition = handle_user_turn(
+            player_guess_pattern,
+            computer_hidden_pattern,
+            number_of_ships,
+            player_hits)
+
+        if player_win_condition:
+            break
+
+        turns -= 1
+
+        print('You have ' + str(turns) + ' turns remaining.')
+        print()
+
+       
+        computer_hits, computer_win_condition = handle_computer_turn(
+            computer_guess_pattern,
+            player_hidden_pattern,
+            number_of_ships,
+            computer_hits)
+
+        if computer_win_condition:
+            break
+
+        game_over_condition_handler(
+            turns,
+            player_guess_pattern,
+            computer_guess_pattern,
+            player_hits,
+            computer_hits)
