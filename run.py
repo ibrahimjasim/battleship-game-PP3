@@ -96,7 +96,7 @@ def get_computer_location():
     '''
     
     return randint(0, 7), randint(0, 7)
-    
+
 
 
 def create_ships(board, num_ships):
@@ -112,3 +112,14 @@ def create_ships(board, num_ships):
         while board[ship_row][ship_col] == 'X':
             ship_row, ship_col = randint(0, 7), randint(0, 7)
         board[ship_row][ship_col] = 'X'
+
+
+def count_hit_ships(board):
+    '''
+        Count the number of ships that are hit.
+
+        input : board to count the hit number of ships
+    '''
+
+    
+    return sum(row.count('X') for row in board)
