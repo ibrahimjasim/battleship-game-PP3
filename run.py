@@ -87,3 +87,12 @@ def get_col_from_user():
             continue
         else:
             return letters_to_index_mapping[column]
+            
+
+def get_computer_location():
+    '''
+        Get the location choosen by the computer. This location
+        is randomly decided.
+    '''
+    
+    return randint(0, 7), randint(0, 7)
