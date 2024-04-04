@@ -206,3 +206,33 @@ def handle_computer_turn(
         computer_guess_pattern[comp_row][comp_column] = '-'
 
     return computer_hits, computer_win_conditon
+
+
+def game_over_condition_handler(
+        turns,
+        player_guess_pattern,
+        computer_guess_pattern,
+        player_hits,
+        computer_hits):
+    '''
+        Check whether if the game is over and handles that
+
+        Input :
+        turns : to see whether there are any turns left
+        player_guess_pattern : to print the player guessing.
+        computer_guess_pattern : to print the computer guessing.
+        player_hits : to decide the winner
+        computer_hits : to decide the winner
+
+    '''
+
+   
+    if turns == 0:
+        print('Game Over')
+        print_boards(player_guess_pattern, computer_guess_pattern)
+        if player_hits > computer_hits:
+            print("Congratulations! You have won with more hits.")
+        elif computer_hits > player_hits:
+            print("Oh no! The computer has won with more hits.")
+        else:
+            print("It's a tie based on hits!")
