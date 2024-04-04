@@ -34,3 +34,22 @@ The game Battleship is a Python terminal game that revolves around two players t
 
 
 ![pp3](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/8c516fcc-e564-4ac5-8044-1cee004af486)
+
+
+## Features
+
+-  **Grid-Based Gameplay:** The game is played on two 8x8 grids - one for the player and one for the computer. Each grid represents the ocean where ships are hidden.
+-  **Ship Placement:** At the start of the game, ships are randomly placed on both the player's and computer's grids. The placement is hidden from the opponent.
+-  **Turn-Based Guessing:** Players take turns guessing the location of the opponent's ships by specifying a row and a column (e.g., 1A, 3D).
+-  **Hit and Miss Feedback:** After each guess, the game provides immediate feedback. A "hit" indicates a ship is located at the guessed spot, and a "miss" indicates an empty ocean square.
+-  **Tracking Shots:** The game keeps track of each player's guesses, marking hits and misses on the grid so players can see their shot history and strategy.
+-  ***Winning Condition:*** The objective is to sink all of the opponent's ships. The game ends when either the player or the computer sinks all of the other's ships.
+-  **Randomized AI Behavior:** The computer's guesses are randomized, providing an unpredictable opponent.
+
+
+![pp3](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/12703b6d-db16-4f29-a9bf-f8cb823d65de)
+
+
+## Wireframe 
+![Blank diagram](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/2b597f57-ba47-4ba7-936d-f9276c38dfb7)
+
