@@ -168,3 +168,41 @@ def handle_user_turn(
         player_guess_pattern[row][column] = '-'
 
     return player_hits, player_win_condition
+
+
+def handle_computer_turn(
+        computer_guess_pattern,
+        player_hidden_pattern,
+        number_of_ships,
+        computer_hits):
+    '''
+        Handle the computer's turn
+
+        Input :
+        computer_guess_pattern : to identify whether computer has guessed a previous guess.
+        player_hidden_pattern : to identify whether computer hit a ship.
+        number_of_ships : to decide whether the computer has won.
+        computer_hits : to decide if the computer has won and also to update the varaible.
+
+    '''
+
+    computer_win_conditon = False
+
+    comp_row, comp_column = get_computer_location()
+
+    
+    if computer_guess_pattern[comp_row][comp_column] == '-':
+        print('You guessed an already guessed location.')
+    elif player_hidden_pattern[comp_row][comp_column] == 'X':
+        print("Oh no! The computer hit your battleship!")
+        computer_guess_pattern[comp_row][comp_column] = 'X'
+        computer_hits += 1
+        if computer_hits == number_of_ships:
+            print("Oh no! The computer has sunk all your battleships.")
+            computer_win_conditon = True
+            return computer_hits, computer_win_conditon
+    else:
+        print("The computer missed!")
+        computer_guess_pattern[comp_row][comp_column] = '-'
+
+    return computer_hits, computer_win_conditon
