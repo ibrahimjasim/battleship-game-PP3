@@ -236,3 +236,20 @@ def game_over_condition_handler(
             print("Oh no! The computer has won with more hits.")
         else:
             print("It's a tie based on hits!")
+
+
+def restart_condition_handler():
+    '''
+        Check whether the user want to play another game.
+    '''
+
+
+    while True:
+        user_input = input("Do you want to play another game (y/n) ? ").upper()
+        if user_input not in ["Y", "N"]:
+            print("Invalid entry! Please enter y or n")
+        else:
+            if user_input == "Y":
+                return True
+            else:
+                return False
