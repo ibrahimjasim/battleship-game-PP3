@@ -49,6 +49,10 @@ The game Battleship is a Python terminal game that revolves around two players t
 
 ![pp3](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/12703b6d-db16-4f29-a9bf-f8cb823d65de)
 
+## End game 
+![pp3 end game](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/d68071e1-db97-45c1-a448-95b46e7ef9f2)
+
+
 
 ## Wireframe 
 ![Blank diagram](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/2b597f57-ba47-4ba7-936d-f9276c38dfb7)
@@ -75,3 +79,18 @@ The game Battleship is a Python terminal game that revolves around two players t
 ![Lighthousse pp3](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/4abd6d67-e5b4-497b-91ae-db354d9c3c4e)
 
 
+## Deployment steps 
+* Pushed the final project to GitHub
+* Created a new Heroku app
+* Set the port key in my configvars
+* Set the buildpacks to `Python` and `NodeJS`, in that order 
+* Connect GitHub as my Deployment method
+* Then scroll down to Manual deploy then pressed the Deploy Bransh button
+
+## Bugs
+* Hitting enter for the first two inputs causes it to break
+* Entering in two letters/numberss causes the game to crash
+* Entering in a lower case is not acepted a second time round if the first column entry was invalid
+* Game increments one of my turns when the computer plays
+* Code get_ship_location() allows for users to enter for eg. "123" as a position and continue playing.
+* 
