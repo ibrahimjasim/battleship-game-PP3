@@ -88,9 +88,9 @@ The game Battleship is a Python terminal game that revolves around two players t
 ### Main Languages Used
 - Python
 ### Frameworks, Libraries & Programs Used
-GitPod - to create my html files & styling sheet before pushing the project to Github.
-GitHub - to store my repository for submission.
-Heroku - to deploy the live version of the terminal.
+* GitPod - to create my html files & styling sheet before pushing the project to Github.
+* GitHub - to store my repository for submission.
+* Heroku - to deploy the live version of the terminal.
 
 
 ## Deployment steps 
