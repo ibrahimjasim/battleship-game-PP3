@@ -29,7 +29,6 @@ The game Battleship is a Python terminal game that revolves around two players t
 -  Enter the coordinates where you think the computer's ships are located. For example, you might enter 1 for the row and A for the column.
 -  The terminal will update you on whether your guess was a hit or a miss and display the game boards showing your guesses and the computer's guesses.
 -  The game will also handle the computer's turn, making guesses against your ships.
--  
 
 
 
@@ -50,6 +49,11 @@ The game Battleship is a Python terminal game that revolves around two players t
 ![pp3](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/12703b6d-db16-4f29-a9bf-f8cb823d65de)
 
 ## End game 
+
+A successful game round, that has been played out till the end, allows the user to view the opponents grid.
+The score is also written out as well as a message congratulating/comisserating the player. 
+A feuture allowing the game to be reset in order for the player to enjoy a new round is also presented as an option at the very end of a game. 
+
 ![pp3 end game](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/d68071e1-db97-45c1-a448-95b46e7ef9f2)
 
 
