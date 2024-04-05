@@ -1,11 +1,9 @@
 # Battleship game
 ![pp3 am i](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/f1c901e8-14c2-4df4-ae90-c8fbd3daa73e)
 
-
-
 The game Battleship is a Python terminal game that revolves around two players trying to strategically guess and locate the positions of the opponent's ships while keeping the positions of ones own ships hidden. The game is typically played on a grid-based board in which each battleship occupies one cell on the grid. First player to sink all of the opponent's ships is declared winner of the game round. 
-
-## Why playing the game 
+## UX
+### Why playing the game 
  **Skill Development:**
 -  It's a great way to practice strategic thinking and decision-making skills. Players need to guess the locations of ships, which requires logical reasoning and sometimes even pattern recognition.
 
@@ -35,6 +33,13 @@ The game Battleship is a Python terminal game that revolves around two players t
 ![pp3](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/8c516fcc-e564-4ac5-8044-1cee004af486)
 
 
+## Design
+<br>
+
+### Wireframe 
+![Blank diagram](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/2b597f57-ba47-4ba7-936d-f9276c38dfb7)
+
+
 ## Features
 
 -  **Grid-Based Gameplay:** The game is played on two 8x8 grids - one for the player and one for the computer. Each grid represents the ocean where ships are hidden.
@@ -48,18 +53,14 @@ The game Battleship is a Python terminal game that revolves around two players t
 
 ![pp3](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/12703b6d-db16-4f29-a9bf-f8cb823d65de)
 
-## End game 
+### End game 
 
-A successful game round, that has been played out till the end, allows the user to view the opponents grid.
-The score is also written out as well as a message congratulating/comisserating the player. 
-A feuture allowing the game to be reset in order for the player to enjoy a new round is also presented as an option at the very end of a game. 
+-  A successful game round, that has been played out till the end, allows the user to view the opponents grid.
+-  The score is also written out as well as a message congratulating/comisserating the player. 
+-  A feuture allowing the game to be reset in order for the player to enjoy a new round is also presented as an option at the end of a game. 
 
 ![pp3 end game](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/d68071e1-db97-45c1-a448-95b46e7ef9f2)
 
-
-
-## Wireframe 
-![Blank diagram](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/2b597f57-ba47-4ba7-936d-f9276c38dfb7)
 
 ## Testing
 
@@ -67,20 +68,29 @@ A feuture allowing the game to be reset in order for the player to enjoy a new r
 
 | Verified |  Tested Variables | Description of output |
 | ----------- | ----------- |----------- |
-| - [x] | Input random charachters/ space **once** instetad of accepted input data | Program replies with consistent *"Please enter a valid row"* |
-| - [x] | Input random charachters/ space **twice** instetad of accepted input data | Program reples with consistent *"Please enter a valid row"* |
-| - [x] | Input random charachters/ space **multiple times** instetad of accepted input data | Program replies with consistent *"Please enter a valid row"* |
-| - [x] | Correct cell is selected | Selecting **8-C** results in the selected cell to be hit. |
-| - [x] | Guessing same target twice | Selecting **8-C**  twice results in reply: *"You already guessed that"* |
-| - [x] | Guessing outside grid | Selecting **9-M** results in reply: *"Please enter a valid row"* |
-| - [x] | Computer waits for its turn | After finishing the 10 rounds as a player, the compiter had played 9 rounds. Game tied. |
+|:heavy_check_mark:  | Input random charachters/ space **once** instetad of accepted input data | Program replies with consistent *"Please enter a valid row"* |
+|:heavy_check_mark:  | Input random charachters/ space **twice** instetad of accepted input data | Program reples with consistent *"Please enter a valid row"* |
+|:heavy_check_mark:  | Input random charachters/ space **multiple times** instetad of accepted input data | Program replies with consistent *"Please enter a valid row"* |
+|:heavy_check_mark:  | Correct cell is selected | Selecting **8-C** results in the selected cell to be hit. |
+|:heavy_check_mark:  | Guessing same target twice | Selecting **8-C**  twice results in reply: *"You already guessed that"* |
+|:heavy_check_mark:  | Guessing outside grid | Selecting **9-M** results in reply: *"Please enter a valid row"* |
+|:heavy_check_mark:  | Computer waits for its turn | After finishing the 10 rounds as a player, the compiter had played 9 rounds. Game tied. |
 
 ### Validator testing
 - **No errors detected from PEP8online.com**
 ![PP3 PEP8](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/6ba99590-3eec-432c-aa62-3bd0f6f3ebd4)
 
 ### Perfomance Testing
+- **Using Lighthouse to rate performance on a number of variables**
 ![Lighthousse pp3](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/4abd6d67-e5b4-497b-91ae-db354d9c3c4e)
+
+## Technologies Used
+### Main Languages Used
+- Python
+### Frameworks, Libraries & Programs Used
+GitPod - to create my html files & styling sheet before pushing the project to Github.
+GitHub - to store my repository for submission.
+Heroku - to deploy the live version of the terminal.
 
 
 ## Deployment steps 
@@ -96,5 +106,15 @@ A feuture allowing the game to be reset in order for the player to enjoy a new r
 * Entering in two letters/numberss causes the game to crash
 * Entering in a lower case is not acepted a second time round if the first column entry was invalid
 * Game increments one of my turns when the computer plays
-* Code get_ship_location() allows for users to enter for eg. "123" as a position and continue playing.
-* 
+* Code get_ship_location() allows for users to enter "567" as a position and continue playing.
+
+## Remaining Bugs
+* No bugs remaining
+
+
+
+## Credits
+- CI material for the given project.
+- Wikipedia for rules and logic behind the game.
+- Used "copyassignment" as inspiration for functctions.
+  
