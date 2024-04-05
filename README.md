@@ -1,7 +1,8 @@
 # Battleship game
-![pp3 am i](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/f1c901e8-14c2-4df4-ae90-c8fbd3daa73e)
-
 The game Battleship is a Python terminal game that revolves around two players trying to strategically guess and locate the positions of the opponent's ships while keeping the positions of ones own ships hidden. The game is typically played on a grid-based board in which each battleship occupies one cell on the grid. First player to sink all of the opponent's ships is declared winner of the game round. 
+![pp3 am i](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/f1c901e8-14c2-4df4-ae90-c8fbd3daa73e)
+The Battleship game site is live, the link can be found [HERE](https://battleship-game-pp3-0cf9d51c9ddd.herokuapp.com/)
+
 ## UX
 ### Why playing the game 
  **Skill Development:**
