@@ -1,6 +1,6 @@
 # Battleship game
+![pp3 am i](https://github.com/ibrahimjasim/battleship-game-PP3/assets/127301769/b5b210a5-4b58-46cb-9152-d78dd587e927)
 The game Battleship is a Python terminal game that revolves around two players trying to strategically guess and locate the positions of the opponent's ships while keeping the positions of ones own ships hidden. The game is typically played on a grid-based board in which each battleship occupies one cell on the grid. First player to sink all of the opponent's ships is declared winner of the game round. 
-![pp3 am i](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/f1c901e8-14c2-4df4-ae90-c8fbd3daa73e)
 The Battleship game site is live, the link can be found [HERE](https://battleship-game-pp3-0cf9d51c9ddd.herokuapp.com/)
 
 ## UX
@@ -29,16 +29,18 @@ The Battleship game site is live, the link can be found [HERE](https://battleshi
 -  The terminal will update you on whether your guess was a hit or a miss and display the game boards showing your guesses and the computer's guesses.
 -  The game will also handle the computer's turn, making guesses against your ships.
 
+![Screenshot 2024-01-20 114455](https://github.com/ibrahimjasim/battleship-game-PP3/assets/127301769/d88c6c7a-0f14-4a5a-b497-21b2de872ee9)
 
 
-![pp3](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/8c516fcc-e564-4ac5-8044-1cee004af486)
+
 
 
 ## Design
 <br>
 
 ### Wireframe 
-![Blank diagram](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/2b597f57-ba47-4ba7-936d-f9276c38dfb7)
+![Screenshot 2024-01-20 111233](https://github.com/ibrahimjasim/battleship-game-PP3/assets/127301769/c0dab7d8-e3f4-42ea-a78e-6276c4758d77)
+
 
 
 ## Features
@@ -52,7 +54,7 @@ The Battleship game site is live, the link can be found [HERE](https://battleshi
 -  **Randomized AI Behavior:** The computer's guesses are randomized, providing an unpredictable opponent.
 
 
-![pp3](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/12703b6d-db16-4f29-a9bf-f8cb823d65de)
+![pp3](https://github.com/ibrahimjasim/battleship-game-PP3/assets/127301769/1e3615ba-dc5f-45a6-b6e9-076cac535ab1)
 
 ### End game 
 
@@ -60,7 +62,8 @@ The Battleship game site is live, the link can be found [HERE](https://battleshi
 -  The score is also written out as well as a message congratulating/comisserating the player. 
 -  A feuture allowing the game to be reset in order for the player to enjoy a new round is also presented as an option at the end of a game. 
 
-![pp3 end game](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/d68071e1-db97-45c1-a448-95b46e7ef9f2)
+![pp3 end game](https://github.com/ibrahimjasim/battleship-game-PP3/assets/127301769/3750b939-7059-4b29-ba4c-3d154d8bdc96)
+
 
 
 ## Testing
@@ -79,11 +82,14 @@ The Battleship game site is live, the link can be found [HERE](https://battleshi
 
 ### Validator testing
 - **No errors detected from PEP8online.com**
-![PP3 PEP8](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/6ba99590-3eec-432c-aa62-3bd0f6f3ebd4)
+![pep8](https://github.com/ibrahimjasim/battleship-game-PP3/assets/127301769/391d220a-de50-424e-b1e7-1b266f43c3c8)
+
+
 
 ### Perfomance Testing
 - **Using Lighthouse to rate performance on a number of variables**
-![Lighthousse pp3](https://github.com/ibrahimjasim/Project-milestone-3/assets/127301769/4abd6d67-e5b4-497b-91ae-db354d9c3c4e)
+![Lighthousse pp3](https://github.com/ibrahimjasim/battleship-game-PP3/assets/127301769/00665314-4715-4d80-97c9-77e4efa2068f)
+
 
 ## Technologies Used
 ### Main Languages Used
